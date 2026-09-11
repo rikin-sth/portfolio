@@ -6,27 +6,31 @@
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace;
 
-  /* Surfaces */
-  --color-bg: #0a0a0b;
-  --color-surface: #121214;
-  --color-surface-2: #191a1d;
-  --color-border: #26262b;
-  --color-border-strong: #37383f;
+  /* Surfaces — deep navy */
+  --color-bg: #070d1a;
+  --color-surface: #0d1628;
+  --color-surface-2: #121e34;
+  --color-border: #1c2d4a;
+  --color-border-strong: #2a3f5e;
 
   /* Text */
-  --color-ink: #f3f3f1;
-  --color-ink-muted: #a6a6ae;
-  --color-ink-faint: #8b8c96;
+  --color-ink: #f3f7fc;
+  --color-ink-muted: #94a6be;
+  --color-ink-faint: #7388a3;
 
-  /* Accent */
-  --color-accent: #c6ff3d;
-  --color-accent-ink: #0a0a0b;
-  --color-accent-soft: #c6ff3d1a;
-  --color-accent-line: #c6ff3d40;
+  /* Accent — electric cyan */
+  --color-accent: #00d4ea;
+  --color-accent-ink: #041018;
+  --color-accent-soft: #00d4ea1f;
+  --color-accent-line: #00d4ea40;
 
-  /* Secondary accent — used only in Research for a data/academic register */
-  --color-data: #6fe3ff;
-  --color-data-soft: #6fe3ff1a;
+  /* Filled actions — bright blue with white type */
+  --color-cta: #1e9bff;
+  --color-cta-ink: #ffffff;
+
+  /* Secondary accent — research / data register */
+  --color-data: #5b9fff;
+  --color-data-soft: #5b9fff1a;
 
   --radius-sm: 0.4rem;
   --radius-md: 0.75rem;
@@ -43,6 +47,14 @@
   html {
     scroll-behavior: smooth;
     color-scheme: dark;
+  }
+
+  section[id] {
+    scroll-margin-top: 76px;
+  }
+
+  section#home {
+    scroll-margin-top: 0;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -132,4 +144,5 @@
     mix-blend-mode: overlay;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
+
 }

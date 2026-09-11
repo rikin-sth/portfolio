@@ -8,9 +8,10 @@ export function Experience() {
     <section id="experience" className="py-24 sm:py-32" aria-label="Experience">
       <div className="container-page">
         <SectionHeading
-          index="02 · Experience"
+          label="experience"
+          number="02"
           title="Where the work happened."
-          description="Two roles, two very different problems — shipping product features on a small team, and running ML experiments on real-world data."
+          description="Three roles, three different kinds of problems. Shipping product features on a small team, keeping campus classroom technology running in real time, and running ML experiments on real-world data."
         />
 
         <ol className="relative border-l" style={{ borderColor: 'var(--color-border)' }}>
@@ -22,12 +23,22 @@ export function Experience() {
                 aria-hidden
               />
 
-              <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                <h3 className="text-2xl font-semibold sm:text-3xl" style={{ color: 'var(--color-ink)' }}>
-                  {entry.role}
-                  <span style={{ color: 'var(--color-ink-faint)' }}> · {entry.company}</span>
-                </h3>
-                <span className="mono-tag whitespace-nowrap text-sm" style={{ color: 'var(--color-ink-faint)' }}>
+              <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                  <h3 className="text-2xl font-semibold sm:text-3xl" style={{ color: 'var(--color-ink)' }}>
+                    {entry.role}
+                  </h3>
+                  <p className="mono-tag mt-1 text-sm sm:text-base">
+                    <span style={{ color: 'var(--color-accent)' }}>{entry.company}</span>
+                    {entry.location && (
+                      <span style={{ color: 'var(--color-data)' }}> · {entry.location}</span>
+                    )}
+                  </p>
+                </div>
+                <span
+                  className="mono-tag whitespace-nowrap text-sm sm:pt-1.5"
+                  style={{ color: 'var(--color-ink-faint)' }}
+                >
                   {entry.start} — {entry.end}
                 </span>
               </div>

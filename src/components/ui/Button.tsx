@@ -29,7 +29,7 @@ export function Button({
 
   const styles =
     variant === 'primary'
-      ? 'bg-[var(--color-accent)] text-[var(--color-accent-ink)] hover:-translate-y-0.5 hover:shadow-[0_0_0_1px_var(--color-accent),0_8px_24px_-8px_var(--color-accent)]'
+      ? 'bg-[var(--color-data)] text-cta-ink hover:-translate-y-0.5 hover:shadow-[0_8px_28px_-6px_var(--color-data)]'
       : 'border border-[var(--color-border-strong)] text-[var(--color-ink)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]'
 
   const content = (

@@ -9,10 +9,11 @@ import { cn } from '../../lib/utils'
 
 export function Work() {
   return (
-    <section id="work" className="py-24 sm:py-32" aria-label="Selected work">
+    <section id="projects" className="py-24 sm:py-32" aria-label="Projects">
       <div className="container-page">
         <SectionHeading
-          index="04 · Selected Work"
+          label="projects"
+          number="03"
           title="Projects worth a second look."
           description="Independent builds spanning game architecture, database design, and full-stack workflow tools."
         />
@@ -27,10 +28,21 @@ export function Work() {
                   y={24}
                 >
                   <div
-                    className="aspect-[4/3] overflow-hidden rounded-lg border p-4 sm:p-6"
+                    className={cn(
+                      'aspect-[4/3] overflow-hidden rounded-lg border',
+                      project.image ? '' : 'p-4 sm:p-6',
+                    )}
                     style={{ borderColor: 'var(--color-border)', backgroundColor: 'var(--color-surface)' }}
                   >
-                    <ProjectVisual variant={project.visual} />
+                    {project.image ? (
+                      <img
+                        src={`${import.meta.env.BASE_URL}${project.image}`}
+                        alt={`${project.title} screenshot`}
+                        className="h-full w-full object-cover object-left"
+                      />
+                    ) : (
+                      <ProjectVisual variant={project.visual} />
+                    )}
                   </div>
                 </Reveal>
 
@@ -52,7 +64,7 @@ export function Work() {
                     <span className="mono-tag text-xs uppercase" style={{ color: 'var(--color-ink-faint)' }}>
                       Role
                     </span>
-                    <p className="mt-1 text-sm sm:text-base" style={{ color: 'var(--color-ink-muted)' }}>
+                    <p className="mt-1 text-sm sm:text-base" style={{ color: 'var(--color-data)' }}>
                       {project.role}
                     </p>
                   </div>

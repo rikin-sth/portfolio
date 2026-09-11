@@ -1,5 +1,5 @@
 import { ArrowRight, FileText } from 'lucide-react'
-import { research } from '../../data/portfolio'
+import { journalPaper, research } from '../../data/portfolio'
 import { Reveal } from '../ui/Reveal'
 import { SectionHeading } from '../ui/SectionHeading'
 
@@ -8,17 +8,17 @@ export function Research() {
     <section id="research" className="py-24 sm:py-32" aria-label="Research">
       <div className="container-page">
         <SectionHeading
-          index="03 · Research"
+          label="research"
+          number="04"
           title="Applied ML, published."
-          description="Three years benchmarking gradient boosting models for cyberbullying detection — culminating in a co-authored paper and a national research presentation."
-          accent="data"
+          description="Gradient boosting models for cyberbullying detection culminating in a co-authored paper and a national research presentation."
         />
 
         <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr]">
           <Reveal className="space-y-8">
             <div>
               <div className="mono-tag mb-3 text-xs" style={{ color: 'var(--color-data)' }}>
-                PAPER
+                RESEARCH PAPER
               </div>
               <h3 className="text-balance text-2xl font-semibold sm:text-3xl" style={{ color: 'var(--color-ink)' }}>
                 {research.title}
@@ -26,18 +26,27 @@ export function Research() {
               <p className="mt-1 text-lg" style={{ color: 'var(--color-ink-muted)' }}>
                 {research.subtitle}
               </p>
-              <div className="mt-4 flex flex-wrap items-center gap-3">
-                <span
-                  className="mono-tag inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs"
+              <p className="mt-1" style={{ color: 'var(--color-ink-muted)' }}>
+                {research.authors} · {research.venue}
+              </p>
+              <div className="mt-3 flex flex-wrap items-center gap-3">
+                <a
+                  href={research.paperUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mono-tag inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs transition-colors hover:bg-[var(--color-data-soft)]"
                   style={{ borderColor: 'var(--color-data)', color: 'var(--color-data)' }}
                 >
                   <FileText size={13} />
                   {research.venue}
-                </span>
+                </a>
                 <span className="mono-tag text-xs" style={{ color: 'var(--color-ink-faint)' }}>
-                  Presented at {research.presentedAt}
+                  DOI: {research.doi}
                 </span>
               </div>
+              <p className="mono-tag mt-2 text-xs" style={{ color: 'var(--color-ink-faint)' }}>
+                Presented at {research.presentedAt}
+              </p>
             </div>
 
             <div className="space-y-5">
@@ -76,7 +85,7 @@ export function Research() {
                   <div key={step} className="flex items-center gap-2">
                     <span
                       className="mono-tag rounded-md border px-3 py-2 text-xs sm:text-sm"
-                      style={{ borderColor: 'var(--color-border-strong)', color: 'var(--color-ink)', backgroundColor: 'var(--color-surface)' }}
+                      style={{ borderColor: 'var(--color-accent)', color: 'var(--color-ink)', backgroundColor: 'var(--color-surface)' }}
                     >
                       {step}
                     </span>
@@ -86,6 +95,39 @@ export function Research() {
                   </div>
                 ))}
               </div>
+            </div>
+
+            <div className="mt-4 border-t pt-15" style={{ borderColor: 'var(--color-border)' }}>
+              <div className="mono-tag mb-2 text-xs" style={{ color: 'var(--color-data)' }}>
+                JOURNAL PAPER
+              </div>
+              <h4 className="text-balance text-xl font-semibold sm:text-2xl" style={{ color: 'var(--color-ink)' }}>
+                {journalPaper.title}
+              </h4>
+              <p className="mt-1" style={{ color: 'var(--color-ink-muted)' }}>
+                {journalPaper.authors} · {journalPaper.venue}
+              </p>
+              <div className="mt-3 flex flex-wrap items-center gap-3">
+                <a
+                  href={journalPaper.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mono-tag inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs transition-colors hover:bg-[var(--color-data-soft)]"
+                  style={{ borderColor: 'var(--color-data)', color: 'var(--color-data)' }}
+                >
+                  <FileText size={13} />
+                  {journalPaper.venue}
+                </a>
+                <span className="mono-tag text-xs" style={{ color: 'var(--color-ink-faint)' }}>
+                  DOI: {journalPaper.doi}
+                </span>
+              </div>
+              <p className="mono-tag mt-2 text-xs" style={{ color: 'var(--color-ink-faint)' }}>
+                Presented at {journalPaper.presentedAt}
+              </p>
+              <p className="mt-4 leading-relaxed" style={{ color: 'var(--color-ink-muted)' }}>
+                {journalPaper.summary}
+              </p>
             </div>
           </Reveal>
 
@@ -105,6 +147,23 @@ export function Research() {
                 </div>
               ))}
             </div>
+
+            {journalPaper.photo && (
+              <div className="mt-40 sm:mt-135">
+                <div
+                  className="aspect-[4/5] w-full max-w-[260px] overflow-hidden rounded-lg border"
+                  style={{ borderColor: 'var(--color-border)', backgroundColor: 'var(--color-surface)' }}
+                >
+                  <img
+                    src={`${import.meta.env.BASE_URL}${journalPaper.photo}`}
+                    alt="Presenting research at NCUR"
+                    className="h-full w-full object-cover object-bottom"
+                  />
+                </div>
+                <p className="mono-tag mt-2 text-xs" style={{ color: 'var(--color-ink-faint)' }}>
+                </p>
+              </div>
+            )}
           </Reveal>
         </div>
       </div>
