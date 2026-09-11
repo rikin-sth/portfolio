@@ -11,7 +11,7 @@ import { defineConfig } from 'vite'
 // If you deploy to a custom domain, or to https://<USERNAME>.github.io/
 // (a "user/organization" site, not a project site), set REPO_NAME to "".
 // ---------------------------------------------------------------------------
-const REPO_NAME = 'rikin-portfolio'
+const REPO_NAME = 'portfolio'
 
 export default defineConfig({
   plugins: [react()],
