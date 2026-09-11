@@ -1,4 +1,4 @@
-# Rikin Bahadur Shrestha — Portfolio
+# Rikin Bahadur Shrestha Portfolio
 
 A single-page developer portfolio built with React, TypeScript, Tailwind CSS, and Framer Motion. All content is sourced from Rikin's resume and structured as data, separate from presentation.
 
@@ -9,6 +9,8 @@ A single-page developer portfolio built with React, TypeScript, Tailwind CSS, an
 - **Tailwind CSS v4** — styling (CSS-first `@theme` configuration, no `tailwind.config.js` needed)
 - **Framer Motion** — section reveals, hover states, page transitions (respects `prefers-reduced-motion`)
 - **Lucide React** — iconography (GitHub/LinkedIn marks are hand-rolled SVGs, since brand icons aren't in Lucide's icon set)
+
+
 
 ## Project structure
 
@@ -32,6 +34,8 @@ public/
 .github/workflows/deploy.yml    # GitHub Pages deploy on push to main
 ```
 
+
+
 ## Local development
 
 ```bash
@@ -39,7 +43,7 @@ npm install
 npm run dev
 ```
 
-Opens the dev server (default: http://localhost:5173).
+Opens the dev server (default: [http://localhost:5173](http://localhost:5173)).
 
 ## Build
 
@@ -53,14 +57,18 @@ Type-checks with `tsc -b` and outputs a production build to `dist/`. Preview it 
 npm run preview
 ```
 
+
+
 ## Customizing content
 
-Almost everything on the page is driven by **`src/data/portfolio.ts`**: personal info and social links, the about-section narrative, work experience, projects, the research write-up, skills groups, education, certifications, and publications. Update that file rather than the section components for content changes.
+Almost everything on the page is driven by `src/data/portfolio.ts`: personal info and social links, the about-section narrative, work experience, projects, the research write-up, skills groups, education, certifications, and publications. Update that file rather than the section components for content changes.
 
 A few fields are intentionally left blank as `TODO`s because they weren't available on the source resume — fill these in when you have them:
 
 - `personal.linkedin` / `personal.github` — the resume lists these as short handles (`linkedin/rikin-shrestha`, `github/Rikin148`); confirm the full profile URLs.
 - `projects[].github` / `projects[].demo` — no repository or live-demo links were provided for the three independent projects (2D Space Shooter, Internship DBMS, SRMS). Add them and the corresponding links will appear automatically; until then, those buttons stay hidden.
+
+
 
 ## Deploying to GitHub Pages
 
