@@ -1,4 +1,4 @@
-# Rikin Bahadur Shrestha — Portfolio
+# Rikin Bahadur Shrestha Portfolio
 
 A single-page developer portfolio built with React, TypeScript, Tailwind CSS, and Framer Motion. All content is sourced from Rikin's resume and structured as data, separate from presentation.
 
