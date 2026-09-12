@@ -10,8 +10,8 @@ export function Research() {
         <SectionHeading
           label="research"
           number="04"
-          title="Applied ML, published."
-          description="Gradient boosting models for cyberbullying detection culminating in a co-authored paper and a national research presentation."
+          title="Research"
+          description="Exploring machine learning through real-world data and research."
         />
 
         <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr]">
@@ -33,7 +33,7 @@ export function Research() {
                 <a
                   href={research.paperUrl}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="mono-tag inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs transition-colors hover:bg-[var(--color-data-soft)]"
                   style={{ borderColor: 'var(--color-data)', color: 'var(--color-data)' }}
                 >
@@ -111,7 +111,7 @@ export function Research() {
                 <a
                   href={journalPaper.url}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="mono-tag inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs transition-colors hover:bg-[var(--color-data-soft)]"
                   style={{ borderColor: 'var(--color-data)', color: 'var(--color-data)' }}
                 >

@@ -62,16 +62,16 @@ export function Hero() {
             <Button
               href={`${import.meta.env.BASE_URL}${personal.resumeUrl}`}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               variant="ghost"
             >
-              View résumé
+              Resume
             </Button>
             <div className="ml-1 flex items-center gap-4">
               <a
                 href={personal.github}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label="GitHub profile"
                 className="text-[var(--color-ink-muted)] transition-colors hover:text-[var(--color-accent)]"
               >
@@ -80,7 +80,7 @@ export function Hero() {
               <a
                 href={personal.linkedin}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label="LinkedIn profile"
                 className="text-[var(--color-ink-muted)] transition-colors hover:text-[var(--color-accent)]"
               >
@@ -89,7 +89,7 @@ export function Hero() {
               <a
                 href={personal.behance}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label="Behance profile"
                 className="text-[var(--color-ink-muted)] transition-colors hover:text-[var(--color-accent)]"
               >

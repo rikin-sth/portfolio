@@ -55,7 +55,7 @@ export function Nav() {
         borderBottom: scrolled ? '1px solid var(--color-border)' : '1px solid transparent',
       }}
     >
-      <nav className="container-page flex h-[76px] items-center justify-end gap-3" aria-label="Primary">
+      <nav className="container-page flex h-[var(--nav-height)] items-center justify-end gap-3" aria-label="Primary">
         <a
           href="#home"
           onClick={(e) => {
@@ -98,7 +98,7 @@ export function Nav() {
             <a
               href={`${import.meta.env.BASE_URL}${personal.resumeUrl}`}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="mono-tag inline-flex items-center gap-1.5 rounded-full border px-4 py-2 text-xs transition-colors hover:opacity-80"
               style={{ borderColor: 'var(--color-accent)', color: 'var(--color-accent)' }}
             >
@@ -146,19 +146,19 @@ export function Nav() {
                 </li>
               ))}
               <li className="mt-2 flex items-center gap-4 px-3">
-                <a href={personal.github} target="_blank" rel="noreferrer" aria-label="GitHub profile">
+                <a href={personal.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
                   <GithubIcon size={20} />
                 </a>
-                <a href={personal.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+                <a href={personal.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
                   <LinkedinIcon size={20} />
                 </a>
-                <a href={personal.behance} target="_blank" rel="noreferrer" aria-label="Behance profile">
+                <a href={personal.behance} target="_blank" rel="noopener noreferrer" aria-label="Behance profile">
                   <BehanceIcon size={20} />
                 </a>
                 <a
                   href={`${import.meta.env.BASE_URL}${personal.resumeUrl}`}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="mono-tag ml-auto inline-flex items-center gap-1.5 rounded-full border px-4 py-2 text-xs"
                   style={{ borderColor: 'var(--color-accent)', color: 'var(--color-accent)' }}
                 >

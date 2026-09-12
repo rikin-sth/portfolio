@@ -65,7 +65,7 @@ Almost everything on the page is driven by `src/data/portfolio.ts`: personal inf
 
 A few fields are intentionally left blank as `TODO`s because they weren't available on the source resume — fill these in when you have them:
 
-- `personal.linkedin` / `personal.github` — the resume lists these as short handles (`linkedin/rikin-shrestha`, `github/Rikin148`); confirm the full profile URLs.
+- `personal.linkedin` / `personal.github` — confirm the full profile URLs if they change.
 - `projects[].github` / `projects[].demo` — no repository or live-demo links were provided for the three independent projects (2D Space Shooter, Internship DBMS, SRMS). Add them and the corresponding links will appear automatically; until then, those buttons stay hidden.
 
 

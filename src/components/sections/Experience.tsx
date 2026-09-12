@@ -10,8 +10,8 @@ export function Experience() {
         <SectionHeading
           label="experience"
           number="02"
-          title="Where the work happened."
-          description="Three roles, three different kinds of problems. Shipping product features on a small team, keeping campus classroom technology running in real time, and running ML experiments on real-world data."
+          title="Experience"
+          description="Building software, supporting systems, and solving problems along the way."
         />
 
         <ol className="relative border-l" style={{ borderColor: 'var(--color-border)' }}>

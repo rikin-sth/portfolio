@@ -44,13 +44,18 @@
     border-color: var(--color-border);
   }
 
+  :root {
+    --nav-height: 76px;
+  }
+
   html {
     scroll-behavior: smooth;
     color-scheme: dark;
   }
 
+  /* Keep section titles clear of the fixed header on nav jumps */
   section[id] {
-    scroll-margin-top: 76px;
+    scroll-margin-top: calc(var(--nav-height) + 1rem);
   }
 
   section#home {

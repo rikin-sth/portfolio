@@ -17,8 +17,8 @@ export function Skills() {
         <SectionHeading
           label="skills"
           number="05"
-          title="The stack, grouped by what it's for."
-          description="Technologies I reach for day to day, plus the languages I speak outside of code."
+          title="Skills"
+          description="The tools and technologies behind my work."
         />
 
         <div>

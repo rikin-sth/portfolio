@@ -14,9 +14,8 @@ export const personal = {
   workAuth: 'Authorized to work in the U.S.',
   email: 'rikin48shrestha@gmail.com',
   phone: '507-351-3261',
-  // TODO: confirm exact profile URLs — resume lists these as short handles.
   linkedin: 'https://linkedin.com/in/rikin-shrestha',
-  github: 'https://github.com/Rikin148',
+  github: 'https://github.com/rikin-sth',
   behance: 'https://www.behance.net/rikinshrestha',
   resumeUrl: 'resume.pdf',
   tagline: 'Building with logic. Designing with purpose. Always learning.',
@@ -118,7 +117,7 @@ export const projects: ProjectEntry[] = [
     id: 'space-shooter',
     title: '2D Space Shooter',
     date: 'Apr. 2026',
-    tagline: 'A shoot-em-up architected entirely around software design patterns.',
+    tagline: 'A Unity shoot-em-up built around software design patterns.',
     role: 'Solo developer',
     bullets: [
       'Architected the game around 11 software design patterns, including State (player lifecycle), Strategy (enemy movement), Factory and Prototype (enemy creation), Facade (level orchestration), Command (input actions), and Observer (UI reactivity), for a fully decoupled, extensible architecture.',
@@ -135,7 +134,7 @@ export const projects: ProjectEntry[] = [
     id: 'internship-dbms',
     title: 'Internship Database Management System',
     date: 'Mar. 2026',
-    tagline: 'A normalized relational schema built to hold up under real query load.',
+    tagline: 'A relational database for internship data with a normalized schema and optimized queries.',
     role: 'Solo developer',
     bullets: [
       'Designed a relational database schema applying normalization to reduce redundancy and improve structural integrity.',
@@ -151,7 +150,7 @@ export const projects: ProjectEntry[] = [
     id: 'srms',
     title: 'Service Request Management System',
     date: 'Dec. 2025',
-    tagline: 'A MERN platform for creating, tracking, and resolving service requests by role.',
+    tagline: 'A MERN app for creating, tracking, and managing service requests by role.',
     role: 'Frontend lead & workflow design',
     bullets: [
       'Planned the application workflow and led frontend development of a MERN-based service request platform, designing the CRUD flows and access model for creating, viewing, updating, and managing requests.',

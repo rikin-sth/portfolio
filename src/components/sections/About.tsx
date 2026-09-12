@@ -70,7 +70,7 @@ export function About() {
                       key={label}
                       href={href}
                       target={external ? '_blank' : undefined}
-                      rel={external ? 'noreferrer' : undefined}
+                      rel={external ? 'noopener noreferrer' : undefined}
                       aria-label={label}
                       className="text-[var(--color-ink-muted)] transition-colors hover:text-[var(--color-accent)]"
                     >

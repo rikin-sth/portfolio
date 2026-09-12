@@ -14,8 +14,8 @@ export function Work() {
         <SectionHeading
           label="projects"
           number="03"
-          title="Projects worth a second look."
-          description="Independent builds spanning game architecture, database design, and full-stack workflow tools."
+          title="Projects"
+          description="Ideas I've turned into working software."
         />
 
         <div className="space-y-20 sm:space-y-28">
@@ -97,7 +97,7 @@ export function Work() {
                         <a
                           href={project.github}
                           target="_blank"
-                          rel="noreferrer"
+                          rel="noopener noreferrer"
                           className="inline-flex items-center gap-1.5 text-sm font-medium transition-colors hover:text-[var(--color-accent)]"
                         >
                           <GithubIcon size={16} /> Repository
@@ -107,7 +107,7 @@ export function Work() {
                         <a
                           href={project.demo}
                           target="_blank"
-                          rel="noreferrer"
+                          rel="noopener noreferrer"
                           className="inline-flex items-center gap-1.5 text-sm font-medium transition-colors hover:text-[var(--color-accent)]"
                         >
                           <ExternalLink size={16} /> Live demo
