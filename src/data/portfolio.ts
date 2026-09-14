@@ -220,6 +220,10 @@ export const skills = {
       title: 'Machine Learning & Data',
       items: ['Scikit-learn', 'XGBoost', 'LightGBM', 'CatBoost', 'NLP', 'TF-IDF', 'Pandas', 'NumPy'],
     },
+    {
+      title: 'Graphic Designing',
+      items: ['Figma', 'Photoshop', 'Illustrator', 'InDesign'],
+    },
   ],
 }
 

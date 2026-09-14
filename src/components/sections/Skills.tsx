@@ -1,4 +1,4 @@
-import { BrainCircuit, Code2, Database, Languages as LanguagesIcon, Layers } from 'lucide-react'
+import { BrainCircuit, Code2, Database, Languages as LanguagesIcon, Layers, PenTool } from 'lucide-react'
 import { skills, spokenLanguages } from '../../data/portfolio'
 import { Reveal } from '../ui/Reveal'
 import { SectionHeading } from '../ui/SectionHeading'
@@ -8,6 +8,7 @@ const groupIcons: Record<string, typeof Code2> = {
   'Frontend & Backend': Layers,
   'Databases & Cloud': Database,
   'Machine Learning & Data': BrainCircuit,
+  'Graphic Designing': PenTool,
 }
 
 export function Skills() {
